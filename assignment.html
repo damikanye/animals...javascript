@@ -4,10 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>Animals</title>
-    <script type="text/javascript">
-        var animals = ["Lion", "Bull", "Dog", "Cat", "Elephant", "Goat", "Sheep", "Tiger", "Leopard", "Zebra", "Pig", "Wolf"];
-        document.getElementById.innerHTML = window.alert("Name of any animal");
-        window.prompt(animals);
+    <script type="text/javascript"> 
+ const animals = ["Dog", "Goat", "Lion", "Tiger", "Elephant", "Cow"];
+const favAnimal = prompt("Enter your favorite animal.");
+for(let i = 0; i < animals.length; i++){
+  if(animals[i] === favAnimal){
+    alert("We are your favorite animal");
+    break;
+  }else {
+     if(i === animals.length-1){
+      alert("We do not have your favorite animal");
+    }
+  }
+}
 
     </script>
 </head>
