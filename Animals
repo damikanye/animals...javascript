@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Animals</title>
+    <style media="screen">
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        background: linear-gradient(#cd295a, #38adae) no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      h1 {
+        font-size: 10rem;
+        color: #ffffff;
+      }
+   
+</head>
+
+<body>
+  <h1>Hello World</h1>
+  <script type="text/javascript">
+      const animals = ["Dog", "Goat", "Lion", "Tiger", "Elephant", "Cow"];
+      const favAnimal = prompt("Enter your favorite animal.");
+      for(let i = 0; i < animals.length; i++){
+        if(animals[i].toLowerCase() === favAnimal.toLowerCase()){
+          alert("We are your favorite animal");
+          break;
+        }else {
+           if(i === animals.length-1){
+            alert("We do not have your favorite animal");
+          }
+      }
+      }
+
+  </script>
+
+</body>
+
+</html>
